@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+background-image: url(img/bg.jpg) ;
+background-repeat: no-repeat;
+background-size: 100% 100vh;
+*/
+body {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+html {
+    cursor: url(img/raquete.png) 30 30, auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel {
+    position: absolute;
+    width: 220px;
+    padding: 10px;
+    bottom: 30px;
+    margin-left: 30px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 30px;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mosquito1 {
+    width: 50px;
+    height: 50px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.mosquito2 {
+    width: 70px;
+    height: 70px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.mosquito3 {
+    width: 90px;
+    height: 90px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 700px) {
+    body,
+    html {
+        background-size: cover;
+    }
+}
